@@ -22,3 +22,17 @@ function convertToRoman(num) {
 }
 
 convertToRoman(36);
+
+function rot13(str) {
+  var result = '';
+  var n = 13
+
+  for (var i = 0; i < str.length; i++) {
+    const charcode = (str[i].charCodeAt()) + n;
+    result += String.fromCharCode(charcode)
+  }
+  console.log(result)
+  return result
+}
+
+rot13("SERR PBQR PNZC");
